@@ -1,0 +1,32 @@
+<!-- _includes/partials/_navigation.njk-->
+<header class="sticky inset-0 py-4 bg-black text-gray-50">
+<nav class="max-w-2xl mx-auto space-x-6 text-lg">
+    <a href="/"
+            {% if item.url == page.url %}
+                aria-current='page' data-state='active'
+            {% endif %}
+            class="hover:text-sky-400">
+        Home
+    </a>
+    <a href="/about" 
+        {% if item.url == page.url %}
+                aria-current='page' data-state='active'
+        {% endif %}
+        class="hover:text-sky-400">
+            About
+    </a>
+        <a href="/posts" 
+        {% if item.url == page.url %}
+                aria-current='page' data-state='active'
+        {% endif %}
+        class="hover:text-sky-400">
+            Posts
+    </a>
+</nav>
+</header>
+
+
+
+<nav>
+    
+</nav>
